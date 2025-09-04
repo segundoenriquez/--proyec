@@ -1,0 +1,22 @@
+Consigna:
+Hay tres clases de animales, vacas, cerdos y gallinas
+Vacas: cuando nacen pesan 50kg, tienen hambre si pesan menos de 400kg, si beben agua pierden 1Kg de peso, tienen sed despues de comer, aumentan de peso segun las
+siguientes formulas cantidad de alimento / 2, cuando caminan pierden 3 kilos de peso, se las puede vacunar solo una vez.
+
+Cerdos: cuando nacen pesan 30kg, tienen hambre si pesan menos de 200kg, tienen sed si comen tres veces sin beber agua, aumentan de peso segun la formula
+cantidad de alimento - 5, no les afecta la aplicacion de multiples vacunas.
+
+Gallinas: cuando nacen pesan 4 kilos, siempre tienen hambre, nunca tienen sed, no aumentan de peso, no se vacunan.
+
+Modelo: diagrama uml y programar en wollok
+
+Adiciones:
+- Quiero tener un lugar donde tener animale, una coleccion con todos los animales
+- Quiero que el modelo me muestre todos los animales que tengan hambre, que tengan sed, vacunar todos lo que esten sin vacunar.
+- Tener la posibilidad de enfermar a algun animal, cuando enfermo a un animal, si esta vacunado no se enferma, pero si no esta vacunado hay una probailidad de enfermarse,
+si se enferma no puede vacunarse y el animal se muere.
+- Si un animal esta en contacto con otro animal y uno de los dos esta enfermo y el otro no hay una probabilidad de que el esta sano se contaguie en
+caso de no estar vacunado.
+- Si dos animales de la misma especie se cruzan deben tener entre una y tres crias.
+- Si uno de los dos en esa apariamiento las crias tienen la misma posibilidad de tener esa enfermedad.
+- Hay que implementar el paso del tiempo, si un animal tiene hambre durante un periodo de tiempo se mueren.
