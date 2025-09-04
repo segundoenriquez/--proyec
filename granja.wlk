@@ -59,3 +59,49 @@ class Vaca inherits Animal (peso = 50) {
         }
         }
 }
+class Chancho inherits Animal (peso = 30) {
+    var contadorComida = 0
+    var contadorVacunas = 0
+    method tieneHambre() {
+        if (peso < 200) {
+        hambre = true
+    }
+
+    }
+
+    override method beber(){
+        peso = peso - 1
+    }
+    
+    override method comer(cantComida) {
+        contadorComida = contadorComida + 1
+        peso = peso + cantComida - 5
+        if (contadorComida >= 3){
+            sed = true
+        }
+
+    }
+        method caminar() {
+        peso = peso - 2
+    }
+
+    method vacunar(){
+    contadorVacunas = contadorVacunas + 1
+    return "vacuna aplicada numero " + contadorVacunas
+        }
+}
+class Gallina inherits Animal(peso = 4){
+
+ override method TieneHambre() {
+    return true
+ }
+ override method TieneSed() {
+    return false
+ }
+ override method vacunado() {
+    return false
+ }
+    method vacunar(){1
+    return "No es posible vacunar a la gallina "
+        }
+}
